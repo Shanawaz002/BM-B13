@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Headphone Zone</title>
+	<link rel="stylesheet" href="./style/navbar.css">
+</head>
+<body>
+	
+<div id="navbar_outer">             
+    
+</div>
+
+
+</body>
+</html>
+<script src="./scripts/navfun.js"></script>
+<script type="module">
+
+    import {navbar} from './scripts/navbar.js'
+
+    let box = document.getElementById('navbar_outer') 
+    box.innerHTML = navbar();
+</script>

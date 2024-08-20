@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jazz</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 1em;
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .logo a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 1em;
+            margin: 0;
+            padding: 0;
+        }
+        ul li {
+            margin: 0;
+        }
+        ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        ul li a:hover {
+            text-decoration: underline;
+        }
+        .search input {
+            padding: 0.5em;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        /* Add some space below the nav bar to ensure content is not hidden under it */
+        .content {
+            margin-top: 4em;
+        }
+    </style>
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="icon" href="https://www.consumercomplaints.in/thumb.php?bname=1&src=headphone-zone.png&wmax=900&hmax=900&quality=90&nocrop=1">
+</head>
+<body>
+
+    <div id="navbar_outer">
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <a href="index.html">Jazz </a>
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+        </div>
+    </nav>
+    </div>
+     <div id="slideshow"></div>
+
+
+    <div id="partA">
+        <h1 class="heading">START YOUR MUSICAL JOURNEY HERE</h1>
+        <table >
+            <tr>
+                <td onclick="get_data1()">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3566/3566959.png" alt="">
+                    <p>IN-EARS FOR BEGINNERS</p>
+                </td>
+                <td onclick="get_data2()">
+                    <img src="https://cdn-icons-png.flaticon.com/512/8019/8019048.png" alt="">
+                    <p>HEADPHONES FOR BEGINNERS</p>
+                </td>
+                <td onclick="get_data3()"> 
+                    <img src="https://cdn-icons-png.flaticon.com/512/5681/5681325.png" alt="">
+                    <p>TRUE WIRELESS EARBUDS</p></td>
+                <td onclick="get_data4()">      
+                    <img src="https://cdn-icons-png.flaticon.com/512/3206/3206786.png" alt="">
+                    <p>WIRELESS HEADPHONES</p></td>
+                <td onclick="get_data5()">
+                    <img src="https://cdn-icons-png.flaticon.com/512/8284/8284984.png" alt="">
+                    <p>FLAGSHIP IEMS</p>
+                </td>
+                <td onclick="get_data1()">
+                    <img src="https://cdn-icons-png.flaticon.com/512/8305/8305607.png" alt="">
+                    <p>FLAGSHIP HEADPHONES</p>
+                </td>
+                <td onclick="get_data1()">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1544/1544805.png" alt="">
+                    <p>HI-RES AUDIO PLAYERS</p>
+                </td>
+                <td onclick="get_data1()">
+                    <img src="https://cdn-icons-png.flaticon.com/512/7386/7386518.png" alt="">
+                    <p>PORTABLE AMPS & DACS</p>
+                </td>
+            </tr>
+            
+            <tr>
+                <td onclick="get_data1()">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2095/2095240.png" alt="">
+                    <p>DESKTOP AMPS & DACS</p>
+                </td>
+                <td onclick="get_data6()">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2618/2618974.png" alt="">
+                    <p>WORK FROM HOME</p>
+                </td>
+                <td onclick="get_data1()">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3142/3142080.png" alt="">
+                    <p>GAMING</p>
+                </td>
+                <td onclick="get_data1()">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3613/3613243.png" alt="">
+                    <p>STUDIO & PROFESSIONAL</p>
+                </td>
+                <td onclick="get_data1()">
+                    <img src="https://cdn-icons-png.flaticon.com/512/7919/7919605.png" alt="">
+                    <p>SPEAKERS</p>
+                </td>
+                <td onclick="get_data1()">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6323/6323608.png" alt="">
+                    <p>CABLES</p>
+                </td>
+                <td onclick="get_data1()">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6907/6907871.png" alt="">
+                    <p>EARTIPS & EARPADS</p>
+                </td>
+                <td onclick="get_data1()">
+                    <img src="https://cdn-icons-png.flaticon.com/512/8051/8051228.png" alt="">
+                    <p>CASES</p>
+                </td>
+            </tr>
+        </table>
+        <h1 class="heading">LIKE YOU, WE LOVE MUSIC...</h1>
+        <p>And we believe a Headphone is more than just an instrument for sound.</p>
+        <p>It’s the key to a mind-blowing moment of emotion, bringing you closer to your favourite artist, and yourself.</p>
+        <p>We’ve curated the world’s finest headphones & earphones to help you discover the riffs, percussions, basslines and solos that were always there but never heard.</p>
+    </div>
+   
+    <iframe title="" src="https://player.vimeo.com/video/681364200?autoplay=1&amp;autopause=1&amp;background=1&amp;loop=1&amp;muted=1&amp;transparent=0&amp;responsive=1&amp;portrait=0&amp;title=0&amp;byline=0&amp;color=444444" allow="autoplay; encrypted-media;" allowfullscreen="allowfullscreen" control=""></iframe>
+
+     <div class="box">
+          <div>
+            <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/simpl-homepage_238x.png?v=1661144152" alt="">
+            <h2>10% CASHBACK UP TO ₹750 ON ORDERS ABOVE ₹3,999/-</h2>
+            <p>Valid from 21st August to 31st August</p>
+            <p>Tenure Available: 3 Months</p>
+            <p>Transaction Value for Cashback: Rs. 3,999</p>
+            <p>Payment Gateway: Select Simpl Pay in 3 at Checkout to</p>
+            <p>transact with Simple</p>
+          </div>
+          <div>
+            <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphones-Zone-bajaj-finserv-logo_254x.png?v=1657960437" alt="">
+           <h2>NO COST EMI WITH BAJAJ FINSERV</h2>
+           <p>Tenure available: 3 Months</p>
+           <p>Eligibility: All Bajaj Finserv card owners</p>
+           <p>Transaction value: Available on all orders above Rs. 4,500/-</p>
+           <p>Payment Gateway: Choose Razorpay at checkout</p>
+        </div>
+    </div>
+    
+    
+     <h1 class="heading">CHART TOPPING HEADPHONES</h1>
+    <div class="buttons">
+        <button id="btn1" onclick ="top_pro1()">TRENDING IN TOWN 🔥</button>
+        <button id="btn2" onclick="top_pro2()">NEW LAUNCHES 🚀</button>
+        <button id="btn3" onclick="top_pro3()">WFH 📞</button>
+        <button id="btn4" onclick="top_pro4()">UNBOXED 📦</button>
+    </div>
+
+
+    <div id="contt"></div>
+
+    <button class="view" onclick="getthis_data2()">VIEW MORE</button>
+        <h5>FRESH OFF THE BOAT, EXPLORE THE BEST IN AUDIOPHILIA RIGHT NOW</h5>
+        <h1 class="heading">NEW LAUNCHES</h1>
+
+        <div class="pic">
+            <div><img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Shanling-UA3_NewArrivalsBanner_600x.jpg?v=1658217171" alt="">
+             <h2>IMPRESSIVE, IMMERSIVE, IMPECCABLE</h2>
+            </div>
+            <div><img src="https://cdn.shopify.com/s/files/1/0153/8863/files/CCA-Lyra_NewArrivalsBanner_600x.jpg?v=1661164516" alt="">
+            <h2>GREAT SOUND UNDER 2K</h2>
+        </div>
+            <div> <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/SalnotesDioko_NewArrivalsBanner_600x.jpg?v=1661163143" alt="">
+            <h2>THE ONENESS TRULY TIMELESS</h2>
+        </div>
+            <div><img src="https://cdn.shopify.com/s/files/1/0153/8863/files/64Audio-Duo_NewArrivalsBanner_fdc2eaeb-aa36-4b6a-9e26-d4982f226286_600x.jpg?v=1654680319" alt="">
+            <h2>PERFECT MATCH MADE</h2>
+        </div>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Finder-New_1400x.jpg?v=1655447696" alt="">
+        </div>
+
+        <div class="img_b">
+            <h1 class="heading">CONFUSED? USE OUR HEADPHONE FINDER</h1>
+            <p>Find the perfect headphones in less than 5 steps</p>
+            <button class="view"><a href="https://www.headphonezone.in/pages/headphone-finder">TAKE A QUIZ</a></button>
+        </div>
+        
+        <div class="brands">
+    <h1 class="heading">TEAM MEMBERS</h1>
+    <div class="brand_p">
+
+        <div class="tbl-name">
+            <table border="1" width="100%">
+                <tr>
+                    <th>Name</th>
+                    <th>Name</th>
+                    <th>Name</th>
+                    <th>Name</th>
+                    <th>Name</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="path_to_shanawaz_image.jpg" alt="Shanawaz" width="100" height="100"><br>
+                        SHANAWAZ
+                    </td>
+                    <td>
+                        <img src="path_to_muzaffar_image.jpg" alt="Muzaffar" width="100" height="100"><br>
+                        MUZAFFAR
+                    </td>
+                    <td>
+                        <img src="path_to_asrar_image.jpg" alt="Asrar" width="100" height="100"><br>
+                        ASRAR
+                    </td>
+                    <td>
+                        <img src="path_to_zakir_image.jpg" alt="Zakir" width="100" height="100"><br>
+                        ZAKIR
+                    </td>
+                    <td>
+                        <img src="path_to_rafaat_image.jpg" alt="Rafaat" width="100" height="100"><br>
+                        RAFAAT
+                    </td>
+                </tr>
+                <tr>
+                    <td>IT SPECIALIST</td>
+                    <td>PROJECT MANAGER</td>
+                    <td>MARKETING</td>
+                    <td>CUSTOMER RELATIONSHIP MANAGER</td>
+                    <td>FINANCE MANAGER</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+            <!--<H1>SHANAWAZ</H1> <BR> <H1> MUZAFFAR </H1> <BR> <H1> ASRAR </H1> <H1> ZAKIR </H1> <H1> RAFAAT </H1>
+            <H3>IT SPECIALIST</H3> <H3> PROJECT MANAGER </H3> <H3> MARKETING MANAGER </H3> <H3> CUSTOMER RELATIONSHIP MANAGER </H3> <H3> FINANCE MANAGER </H3> -->
+                
+            </div>
+            <button><a href="https://www.headphonezone.in/pages/partner-brands?homepage">SEE ALL</a></button>
+        </div>
+
+        <div class="explore_events">
+            <h5 class="heading">HEADPHONES ARE BEST HEARD</h5>
+            <h1 class="heading">EXPLORE OUR EVENTS & EXPERIENCES</h1>
+            <div class="event">
+                <div>
+                     <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/headphone-homepage-exp_500x.jpg?v=1661329648" alt="">
+                     <h2 class="heading">LISTENING SESSIONS</h2>
+                     <p>The perfect introduction to audiophilia, our listening sessions at our Experience Studio in Mumbai allow you to rediscover your music like never before.</p>
+                     <a href="https://www.headphonezone.in/pages/headphone-zone-experiences">LEARN MORE</a>
+                </div>
+                <div>
+                     <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-Audiophile-101-1080-1080-5_500x.jpg?v=1660286442" alt="">
+                     <h2 class="heading">FREE AUDIO TOUR</h2>
+                     <p>In Mumbai? Come spend an hour with us exploring the world's finest headphones, meeting our Headphone Gurus and sipping on a nice hot cuppa.</p>
+                     <a href="https://headphonezoneexperiences.as.me/schedule.php">BOOK NOW</a>
+                </div>
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/headphone-connect-1_500x.jpg?v=1661240251" alt="">
+                    <h2 class="heading">HEADPHONE CONNECT</h2>
+                    <p>Missed the Summer Edition? India's premier meetup event for audiophiles is now gearing up for the Winter Edition and will hit 6 cities.</p>
+                    <a href="https://www.headphonezone.in/pages/headphone-connect">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+
+      <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/DSC03503_1400x.jpg?v=1645189799" alt="">
+
+      <div class="ourvalues">
+        <h2 class="heading">OUR VALUES</h2>
+        <div>
+            <div>
+                <h3>01</h3>
+                <h5>WE'RE LADIES & GENTLEMEN SERVING LADIES & GENTLEMEN</h5>
+            </div>
+            <div>
+                <h3>02</h3>
+                <h5>WE CHOOSE TO BE THE BEST, RATHER THAN THE BIGGEST</h5>
+            </div>
+            <div>
+                <h3>03</h3>
+                <h5>WE'RE NOT A MUSIC COMPANY, BUT MUSIC IS AT THE CORE OF WHAT WE DO</h5>
+            </div>
+            <div>
+                <h3>04</h3>
+                <h5>WE'RE 100% OWNED, OPERATED AND FUNDED BY PROUD INDIANS</h5>
+            </div>
+            <div>
+                <h3>05</h3>
+                <h5>WE SUPPORT SMALL, INDEPENDENT AND LOCAL BUSINESSES AND COMMUNITIES</h5>
+            </div>
+        </div>
+      </div>
+      <div class="join">
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Club_Audiophile_Logos-400-200_400x.png?v=1640072704" alt="">
+        </div>
+         <div>
+            <h1>IT PAYS TO BE AN
+                AUDIOPHILE</h1>
+            <p>Enjoy Incredible Members-only rewards on the world's finest headphones and earn loyalty points on every purchase.</p>
+            <button><a href="https://www.headphonezone.in/pages/rewards">JOIN THE CLUB</a></button>
+         </div>
+    </div>
+    
+    <div id="footer_counter"></div>
+
+</body>
+</html>
+<script src="./scripts/home.js"></script>
+<script src="./scripts/navfun.js"></script>
+<script type="module">
+    import {navbar} from './scripts/navbar.js'
+    import {footer} from './scripts/footer.js'
+    
+     let navbarBox = document.getElementById('navbar_outer')
+     navbarBox.innerHTML = navbar()
+     
+     let footerBox = document.getElementById('footer_counter')
+     footerBox.innerHTML = footer()
+    
+    </script>

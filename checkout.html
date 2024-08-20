@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>headphonezone</title>
+    <link rel="stylesheet" href="./style/checkout.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+<link rel="stylesheet" href="./style/footer.css">
+ <link rel="icon" href="https://www.consumercomplaints.in/thumb.php?bname=1&src=headphone-zone.png&wmax=900&hmax=900&quality=90&nocrop=1">
+
+</head>
+
+<body>
+    <div id="navbar_outer"></div>
+
+    <div id="paymentpage">
+        <div id="comm">
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-Animated-Header_400x_b56ee274-b480-4d0f-91ae-4a16d148a93f.gif?v=1580537719" alt="">
+            </div>
+            <div id="newlink">
+                <p><a href="cart.html">Cart</a> &#62 Information &#62 Payment</p>
+            </div>
+            <div id="cone">
+                <h3>Contact information</h3>
+                <p>Already have an account?<a href=""> Log in</a></p>
+            </div>
+            <div id="enew">
+                <h4>Email</h4>
+                <div id="showmail"></div>
+            </div>
+        <div id="firstdiv">
+        <span>GST details: </span><span>Is your organisation registered under GST ACT in India?</span>
+    
+        <div id="gstdiv">
+            <span>
+            <input type="radio" name="check1" disabled>
+            <span>Yes, registered under GST ACT</span>
+    </span>
+    <span>
+        <input type="radio" name="check1">
+        <span>No, not registered under GST ACT.</span>
+    </span>
+    
+    </div>
+    <p>Please enter your GST number now. Once order has been placed, no modifications can be made to add your GST number to the invoice.</p>
+
+</div>
+<div>
+    <h3>Shipping address</h3>
+    <div id="adddiv">
+      <select name="divse" id="addtype">
+        <option>Country/region</option>
+        <option value="india">India</option>
+      </select>
+
+      <div id="na1">
+        <input type="text" id="fi1" placeholder="First Name" required/>
+        <input type="text" id="fi2" placeholder="Last Name" required/>
+        <input type="text" id="fi3" placeholder="Address"required/>
+        <input type="text" id="fi4" placeholder="City"required/>
+        <input type="text" id="fi5" placeholder="State"required/>
+        <input type="text" id="fi6" placeholder="Pin Code"required/>
+          <input type="text" id="fi7" placeholder="Phone"required/>
+    </div>
+    <button id="button1">Continue to payment method</button>
+  </div>
+        </div>
+        </div>
+        <div id="proshowpage">
+            <div id="showprod"></div>
+            <hr>
+            <div id="giftdiv">
+            <input type="text" placeholder="Gift card or discount code">
+            <button>APPLY</button>
+        </div>
+        <hr>
+        <div>
+            <div id="subtotal">
+                <span>Subtotal</span>
+                <span id="totalprice"></span>
+            </div>
+        <div id="shipp">
+            <span>Shipping</span>
+            <span id="newli">Free</span>
+        </div>
+        </div>
+        <hr>
+        <div id="ltotal">
+            <span>Total</span>
+            <span id="tprice">
+                <span>INR</span>
+                <span id="totalp"></span>
+            </span>
+        </div>
+    
+    </div>
+</body>
+
+</html>
+
+<script src="./scripts/checkout.js"></script>
+<script src="./scripts/navfun.js"></script>
+<script type="module">
+    import {navbar} from './scripts/navbar.js'
+    import {footer} from './scripts/footer.js'
+    
+     let navbarBox = document.getElementById('navbar_outer')
+     navbarBox.innerHTML = navbar()
+     
+     let footerBox = document.getElementById('footer_counter')
+     footerBox.innerHTML = footer()
+    </script>
+    
